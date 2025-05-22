@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Lab22</string>
+    <string name="title">Игра "Найди точку!"</string>
+    <string name="destination_set">Точка загадана, ищите!</string>
+    <string name="current_distance">Текущее расстояние до точки: %s м</string>
+    <string name="destination_found">Ура, точка найдена!</string>
+    <string name="set_destination">Загадать новую точку!</string>
+    <string name="open_settings">Открыть настройки программы</string>
 </resources>

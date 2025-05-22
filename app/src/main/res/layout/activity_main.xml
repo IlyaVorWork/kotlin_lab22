@@ -10,10 +10,46 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/tvTitle"
+            android:text="@string/title"
+            android:textSize="@dimen/font_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/tvGameStatus"
+            android:layout_marginTop="@dimen/big_gap"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGameStatus"
+            android:textColor="@color/blue"
+            android:text="@string/destination_set"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintBottom_toTopOf="@+id/tvCurrentDistance" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/default_gap"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCurrentDistance"
+            android:text="@string/current_distance"
+            app:layout_constraintTop_toBottomOf="@+id/tvGameStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/default_gap"/>
+    <Button
+            android:text="@string/set_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnSetDestination"
+            app:layout_constraintBottom_toTopOf="@+id/btnOpenSettings" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="@dimen/default_gap"/>
+    <Button
+            android:text="@string/open_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnOpenSettings"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/big_gap"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
